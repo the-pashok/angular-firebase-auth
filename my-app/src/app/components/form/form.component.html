@@ -1,0 +1,15 @@
+<div class="main-form">
+    <div class="main-form-left">
+        <h1>Hello Friend!</h1>
+        <h6>Enter your personal data and start journey with us!</h6>
+    </div>
+    <div class="main-form-right">
+        <div class="form-content" *ngIf="activeSlide === 0">
+            <app-form-signup (activeIndex)="toggleForm($event)"></app-form-signup>
+        </div>
+
+        <div class="form-content" *ngIf="activeSlide === 1">
+            <app-form-login (activeIndex)="toggleForm($event)"></app-form-login>
+        </div>
+    </div>
+</div>
