@@ -1,5 +1,5 @@
 <h2>Sign in</h2>
-<form [formGroup]="loginForm" method="post" (ngSubmit)="onSubmit()">
+<form [formGroup]="loginForm" method="post" (ngSubmit)="onSubmit(loginForm.value)">
     <div class="form-group">
         <input type="text" placeholder="Email" formControlName="email">
     </div>
@@ -7,5 +7,5 @@
         <input type="password" placeholder="Password" formControlName="password">
     </div>
     <div class="mb-3 link" (click)="toggleForm(0)">Sign up</div>
-    <button class="btn-regular btn-colored" type="submit">Sign in</button>
+    <button [disabled]="loginForm.invalid" class="btn-regular btn-colored" type="submit">Sign in</button>
 </form>

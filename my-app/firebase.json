@@ -1,0 +1,6 @@
+{
+    "hosting": {
+        "site": "angular-firebase-auth-d7276",
+        "public": "../dist"
+    }
+}

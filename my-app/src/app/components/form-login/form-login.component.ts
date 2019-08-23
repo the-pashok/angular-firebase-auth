@@ -1,5 +1,6 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {FormBuilder, FormControl, FormGroup} from "@angular/forms";
+import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {AuthService} from '../../services/auth.service';
 
 @Component({
     selector: 'app-form-login',
@@ -11,19 +12,26 @@ export class FormLoginComponent implements OnInit {
     loginForm: FormGroup;
 
     constructor(
-        private formBuilder: FormBuilder
+        private formBuilder: FormBuilder,
+        private authService: AuthService
     ) {
         this.loginForm = this.formBuilder.group({
-            email: new FormControl(''),
-            password: new FormControl('')
+            email: new FormControl('', Validators.compose([
+                Validators.required,
+                Validators.email
+            ])),
+            password: new FormControl('', Validators.compose([
+                Validators.required,
+                Validators.minLength(6)
+            ]))
         });
     }
 
     ngOnInit() {
     }
 
-    onSubmit() {
-
+    onSubmit(data) {
+        this.authService.login(data.email, data.password);
     }
 
     toggleForm(index) {

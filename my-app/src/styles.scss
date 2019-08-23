@@ -78,6 +78,11 @@ body {
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#790957", endColorstr="#ff5d00", GradientType=1);
         color: white;
     }
+
+    &:disabled {
+        background: lightgray;
+        cursor: not-allowed;
+    }
 }
 
 label {

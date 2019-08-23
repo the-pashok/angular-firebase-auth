@@ -1,5 +1,7 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {AuthService} from '../../services/auth.service';
+import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-form-signup',
@@ -13,7 +15,9 @@ export class FormSignupComponent implements OnInit {
     submitted = false;
 
     constructor(
-        private formBuilder: FormBuilder
+        private formBuilder: FormBuilder,
+        private authService: AuthService,
+        private router: Router
     ) {
         this.signUpForm = this.formBuilder.group({
             email: new FormControl('', Validators.compose([
@@ -46,7 +50,7 @@ export class FormSignupComponent implements OnInit {
         this.activeIndex.emit(index);
     }
 
-    onSubmit() {
+    onSubmit(data) {
         this.submitted = true;
 
         if (this.signUpForm.invalid) {
@@ -54,8 +58,8 @@ export class FormSignupComponent implements OnInit {
             return false;
         }
 
-        console.log('valid');
-        console.log(this.signUpForm.value);
+        this.authService.registerUser(data.email, data.password);
+        this.toggleForm(1);
     }
 
     ngOnInit() {

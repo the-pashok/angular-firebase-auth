@@ -1,5 +1,5 @@
 <h2>{{formHeader}}</h2>
-<form [formGroup]="signUpForm" method="post" (ngSubmit)="onSubmit()">
+<form [formGroup]="signUpForm" method="post" (ngSubmit)="onSubmit(signUpForm.value)">
     <div class="form-group">
         <input type="text" placeholder="Email" formControlName="email">
     </div>
@@ -11,5 +11,5 @@
                [ngClass]="{'ng-invalid': signUpForm.errors && signUpForm.controls.repeatPassword.touched}">
     </div>
     <div class="mb-3 link" (click)="toggleForm(1)">Sign in</div>
-    <button class="btn-regular btn-colored" type="submit">Sign up</button>
+    <button [disabled]="signUpForm.invalid" class="btn-regular btn-colored" type="submit">Sign up</button>
 </form>
