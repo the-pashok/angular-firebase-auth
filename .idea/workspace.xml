@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="21a101ab-ff07-4ab0-9a0f-8c841edac6c9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/app-routing/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app-routing/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/components/form-login/form-login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/components/form-login/form-login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/components/form-login/form-login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/components/form-login/form-login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/components/form-signup/form-signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/components/form-signup/form-signup.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/components/form-signup/form-signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/components/form-signup/form-signup.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/components/form/form.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/components/form/form.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/components/form/form.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/components/form/form.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-app/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/my-app/src/app/services/auth.service.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,44 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/app/guards/auth-guard.guard.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/app/services/auth.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/my-app/src/app/app-routing/app-routing.module.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="30" column="30" lean-forward="true" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -90,9 +42,9 @@
         <option value="$PROJECT_DIR$/my-app/src/app/components/form-signup/form-signup.component.html" />
         <option value="$PROJECT_DIR$/my-app/src/app/components/form-login/form-login.component.html" />
         <option value="$PROJECT_DIR$/my-app/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/my-app/src/app/services/auth.service.ts" />
         <option value="$PROJECT_DIR$/my-app/src/app/guards/auth-guard.guard.ts" />
         <option value="$PROJECT_DIR$/my-app/src/app/app-routing/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/my-app/src/app/services/auth.service.ts" />
       </list>
     </option>
   </component>
@@ -113,56 +65,6 @@
             <path>
               <item name="angular-firebase-auth" type="b2602c69:ProjectViewProjectNode" />
               <item name="angular-firebase-auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-firebase-auth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-firebase-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-firebase-auth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-firebase-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-firebase-auth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-firebase-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-firebase-auth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-firebase-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="app-routing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-firebase-auth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-firebase-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-firebase-auth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-firebase-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="guards" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="angular-firebase-auth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="angular-firebase-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -210,12 +112,12 @@
       <updated>1566486687185</updated>
       <workItem from="1566486688489" duration="12661000" />
       <workItem from="1566537095169" duration="16537000" />
-      <workItem from="1566558596030" duration="1330000" />
+      <workItem from="1566558596030" duration="1876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30528000" />
+    <option name="totallyTimeSpent" value="31074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -228,9 +130,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24950495" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24950495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -243,7 +144,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32944608" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.41545188" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.8921283" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -317,7 +218,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/my-app/firebase-debug.log" />
     <entry file="file://$PROJECT_DIR$/my-app/.firebase/hosting..cache" />
-    <entry file="file://$PROJECT_DIR$/firebase.json" />
     <entry file="file://$PROJECT_DIR$/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-144" />
@@ -426,16 +326,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my-app/src/app/services/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/app/guards/auth-guard.guard.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -455,6 +345,19 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/app/services/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
