@@ -1,6 +1,5 @@
 import {Injectable} from '@angular/core';
 import {Router} from '@angular/router';
-import {auth} from 'firebase/app';
 import {AngularFireAuth} from '@angular/fire/auth';
 import {User} from 'firebase';
 
@@ -11,7 +10,8 @@ export class AuthService {
     user: User;
 
     constructor(
-        private afAuth: AngularFireAuth, private router: Router
+        private afAuth: AngularFireAuth,
+        private router: Router
     ) {
         this.afAuth.authState.subscribe(user => {
             if (user) {
@@ -47,7 +47,7 @@ export class AuthService {
         try {
             const res = await this.afAuth.auth.createUserWithEmailAndPassword(email, password);
         } catch (e) {
-            console.log(e);
+            alert(e.message);
         }
     }
 }
