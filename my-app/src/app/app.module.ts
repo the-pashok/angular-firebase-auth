@@ -2,6 +2,8 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AppRoutingModule} from './app-routing/app-routing.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 // firebase modules
 import {AngularFireModule} from '@angular/fire';
@@ -12,19 +14,19 @@ import {environment} from '../environments/environment';
 
 // components
 import {AppComponent} from './app.component';
-import {FormComponent} from './components/form/form.component';
 import {FormLoginComponent} from './components/form-login/form-login.component';
 import {FormSignupComponent} from './components/form-signup/form-signup.component';
 import {UserPageComponent} from './components/user-page/user-page.component';
 import {RouterModule} from "@angular/router";
+import { GreetingComponent } from './components/greeting/greeting.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        FormComponent,
         FormLoginComponent,
         FormSignupComponent,
-        UserPageComponent
+        UserPageComponent,
+        GreetingComponent
     ],
     imports: [
         BrowserModule,
@@ -34,7 +36,9 @@ import {RouterModule} from "@angular/router";
         AngularFireModule.initializeApp(environment.firebaseConfig),
         AngularFirestoreModule,
         AngularFireStorageModule,
-        RouterModule
+        RouterModule,
+        BrowserAnimationsModule,
+        MatSnackBarModule
     ],
     providers: [],
     bootstrap: [AppComponent]

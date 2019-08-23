@@ -1,15 +1,25 @@
-<h2>{{formHeader}}</h2>
-<form [formGroup]="signUpForm" method="post" (ngSubmit)="onSubmit(signUpForm.value)">
-    <div class="form-group">
-        <input type="text" placeholder="Email" formControlName="email">
+<div class="main-form">
+    <app-greeting class="main-form-left"></app-greeting>
+    <div class="main-form-right">
+        <div class="form-content">
+            <h2>{{formHeader}}</h2>
+
+            <form [formGroup]="signUpForm" method="post" (ngSubmit)="onSubmit(signUpForm.value)">
+                <div class="form-group">
+                    <input type="text" placeholder="Email" formControlName="email">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" formControlName="password">
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Repeat password" formControlName="repeatPassword"
+                           [ngClass]="{'ng-invalid': signUpForm.errors && signUpForm.controls.repeatPassword.touched}">
+                </div>
+                <div class="mb-3">
+                    <a class="link" routerLink="/sign-in">Sign in</a>
+                </div>
+                <button [disabled]="signUpForm.invalid" class="btn-regular btn-colored" type="submit">Sign up</button>
+            </form>
+        </div>
     </div>
-    <div class="form-group">
-        <input type="password" placeholder="Password" formControlName="password">
-    </div>
-    <div class="form-group">
-        <input type="password" placeholder="Repeat password" formControlName="repeatPassword"
-               [ngClass]="{'ng-invalid': signUpForm.errors && signUpForm.controls.repeatPassword.touched}">
-    </div>
-    <div class="mb-3 link" (click)="toggleForm(1)">Sign in</div>
-    <button [disabled]="signUpForm.invalid" class="btn-regular btn-colored" type="submit">Sign up</button>
-</form>
+</div>

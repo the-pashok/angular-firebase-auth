@@ -1,4 +1,4 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {AuthService} from '../../services/auth.service';
 
@@ -8,8 +8,8 @@ import {AuthService} from '../../services/auth.service';
     styleUrls: ['./form-login.component.scss']
 })
 export class FormLoginComponent implements OnInit {
-    @Output() activeIndex: EventEmitter<number> = new EventEmitter();
     loginForm: FormGroup;
+    formHeader = 'Sign in';
 
     constructor(
         private formBuilder: FormBuilder,
@@ -32,9 +32,5 @@ export class FormLoginComponent implements OnInit {
 
     onSubmit(data) {
         this.authService.login(data.email, data.password);
-    }
-
-    toggleForm(index) {
-        this.activeIndex.emit(index);
     }
 }

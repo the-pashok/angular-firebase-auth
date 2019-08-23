@@ -1,7 +1,6 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 import {AuthService} from '../../services/auth.service';
-import {Router} from '@angular/router';
 
 @Component({
     selector: 'app-form-signup',
@@ -9,15 +8,13 @@ import {Router} from '@angular/router';
     styleUrls: ['./form-signup.component.scss']
 })
 export class FormSignupComponent implements OnInit {
-    @Output() activeIndex: EventEmitter<number> = new EventEmitter();
     signUpForm: FormGroup;
     formHeader = 'Sign up';
     submitted = false;
 
     constructor(
         private formBuilder: FormBuilder,
-        private authService: AuthService,
-        private router: Router
+        private authService: AuthService
     ) {
         this.signUpForm = this.formBuilder.group({
             email: new FormControl('', Validators.compose([
@@ -46,20 +43,15 @@ export class FormSignupComponent implements OnInit {
         }
     }
 
-    toggleForm(index) {
-        this.activeIndex.emit(index);
-    }
-
     onSubmit(data) {
         this.submitted = true;
 
         if (this.signUpForm.invalid) {
-            console.log('invalid');
+            alert('Invalid data');
             return false;
         }
 
         this.authService.registerUser(data.email, data.password);
-        this.toggleForm(1);
     }
 
     ngOnInit() {
